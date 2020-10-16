@@ -1,0 +1,5 @@
+<ul>
+	<% for song in @songs %>
+		<li><p><%= link_to song, song_path(song) %></p></li>
+	<% end %>
+</ul>
