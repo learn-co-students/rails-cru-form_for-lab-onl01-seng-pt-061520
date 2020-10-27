@@ -1,0 +1,5 @@
+<%= form_tag("/genres") do %>
+    <%= label_tag('genre[name]', "My edit") %>
+    <%= text_field_tag('genre[name]') %>
+    <%= submit_tag "Update Genre" %>
+<% end %>
