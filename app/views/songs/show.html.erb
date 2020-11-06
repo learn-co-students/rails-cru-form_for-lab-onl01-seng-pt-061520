@@ -1,0 +1,10 @@
+<h1>Song Show Page</h1>
+
+<h1><%= @song.name %></h1>
+<p><%= link_to @song.genre.name, genre_path(@song.genre) %></p>
+<p><%= link_to @song.artist.name, artist_path(@song.artist) %></p>
+
+<br>
+
+<%= link_to "Edit Song", edit_song_path(@song) %><br>
+<%= link_to "See all songs", songs_path %> 
